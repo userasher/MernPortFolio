@@ -29,3 +29,11 @@
 .nav-link:hover{
     color: blue
 }
+
+/* jis section  */
+.nav-link .active{
+    color: brown;
+    border-left: 3px solid black;
+    padding-left: 10px;
+    text-decoration: none;
+}

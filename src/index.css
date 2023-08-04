@@ -5,3 +5,11 @@
   box-sizing: border-box;
 }
 
+/* dark mode me kaise dikhega pura page */
+
+/* prevState ke hisab se target kiya hai */
+#dark{
+background-color: #5f264a;
+color: #f4eee0;
+}
+

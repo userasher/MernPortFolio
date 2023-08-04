@@ -1,12 +1,29 @@
 import React from "react";
+import { useTheme } from "../../context/ThemeContext";
 import "./home.css";
 import Typewriter from "typewriter-effect";
 import Resume from "../../assets/docs/resume.txt";
+import { BsFillMoonStarsFill, BsSunFill } from "react-icons/bs";
+
 // ./ single matlb hu ek folder ke bahar aa jayenge
 const Home = () => {
+  const [theme, setTheme] = useTheme();
+
+  //to handle theme when theme button is pressed
+  const handleTheme = () => {
+    setTheme((prevState) => (prevState === "light" ? "dark" : "light"));
+  };
+
   return (
     <>
-      <div className="container-fluid home-container">
+      <div className="container-fluid home-container" id="home">
+        <div className="theme-btn" onClick={handleTheme}>
+          {theme === "light" ? (
+            <BsFillMoonStarsFill size={20} />
+          ) : (
+            <BsSunFill size={20} />
+          )}
+        </div>
         <div className="container home-content">
           <h2>Hi 🙋‍♂️ I'm a</h2>
           <h1>

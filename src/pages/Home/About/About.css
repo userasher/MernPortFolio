@@ -31,3 +31,14 @@
     padding: 20px;
     text-align: justify;
 }
+
+/* =============about section in dark mode=============== */
+
+#dark .about{
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+#dark .about-content{
+    color: #ffffff;
+  
+}

@@ -5,8 +5,8 @@ import { SiAboutdotme } from "react-icons/si";
 import { FcGraduationCap } from "react-icons/fc";
 import { FcSupport } from "react-icons/fc";
 import { FcBiomass } from "react-icons/fc";
-import { FcApproval } from "react-icons/fc";
 import { FcContacts } from "react-icons/fc";
+import { Link } from "react-scroll";
 
 import { BsPersonWorkspace } from "react-icons/bs";
 const Menus = ({ toggle }) => {
@@ -21,36 +21,105 @@ const Menus = ({ toggle }) => {
               alt="profile-pic"
             />
           </div>
+          {/* nav items me hamare sare menu itmes hai */}
           <div className="nav-items">
             <div className="nav-item">
               <div className="nav-link">
-                <FcHome />
+                {/* home */}
+                <Link
+                  to="home"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={100}
+                >
+                  <FcHome />
+                </Link>
                 Home
               </div>
+
+              {/* about me */}
               <div className="nav-link">
-                <SiAboutdotme />
+                <Link
+                  to="about"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={100}
+                >
+                  <SiAboutdotme />
+                </Link>
                 About
               </div>
+
+              {/* education detials */}
               <div className="nav-link">
-                <FcGraduationCap />
+                <Link
+                  to="education"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={100}
+                >
+                  <FcGraduationCap />
+                </Link>
                 Education Details
               </div>
+
+              {/* techstack */}
               <div className="nav-link">
-                <FcSupport />
+                <Link
+                  to="techstack"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={100}
+                >
+                  <FcSupport />
+                </Link>
                 Tech Stack
               </div>
+
+              {/* project */}
               <div className="nav-link">
-                <FcBiomass />
+                <Link
+                  to="project"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={100}
+                >
+                  <FcBiomass />
+                </Link>
                 Projects
               </div>
+
+              {/* Internship */}
               <div className="nav-link">
-                <BsPersonWorkspace />
-                Work Experience
+                <Link
+                  to="work"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={100}
+                >
+                  <BsPersonWorkspace />
+                </Link>
+                Internship
               </div>
 
+              {/* contacts */}
               <div className="nav-link">
-                <FcContacts />
-                Contact
+                <Link
+                  to="contact"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={100}
+                >
+                  <FcContacts />
+                </Link>
+                Contacts
               </div>
             </div>
           </div>
@@ -60,26 +129,96 @@ const Menus = ({ toggle }) => {
           <div className="nav-items">
             <div className="nav-item">
               <div className="nav-link">
-                <FcHome title="Home" />
-              </div>
-              <div className="nav-link">
-                <SiAboutdotme title="About" />
-              </div>
-              <div className="nav-link">
-                <BsPersonWorkspace title="Work" />
-              </div>
-              <div className="nav-link">
-                <FcSupport title="Tech" />
-              </div>
-              <div className="nav-link">
-                <FcGraduationCap title="Education" />
-              </div>
-              <div className="nav-link">
-                <FcBiomass title="Projects" />
+                {/* when navbar is shrinked these icons will be showed */}
+
+                {/* home */}
+                <Link
+                  to="home"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={100}
+                >
+                  <FcHome />
+                </Link>
               </div>
 
+              {/* about */}
               <div className="nav-link">
-                <FcContacts title="Contact" />
+                <Link
+                  to="about"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={100}
+                >
+                  <SiAboutdotme />
+                </Link>
+              </div>
+
+              {/* education */}
+              <div className="nav-link">
+                <Link
+                  to="education"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={100}
+                >
+                  <FcGraduationCap />
+                </Link>
+              </div>
+
+              {/* techstack */}
+              <div className="nav-link">
+                <Link
+                  to="techstack"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={100}
+                >
+                  <FcSupport />
+                </Link>
+              </div>
+
+              {/* project */}
+              <div className="nav-link">
+                <Link
+                  to="project"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={100}
+                >
+                  <FcBiomass />
+                </Link>
+              </div>
+
+              {/* work */}
+              <div className="nav-link">
+                <Link
+                  to="work"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={100}
+                >
+                  <BsPersonWorkspace />
+                </Link>
+              </div>
+
+              {/* contact */}
+              <div className="nav-link">
+                <Link
+                  to="contact"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={100}
+                >
+                  <FcContacts />
+                </Link>
               </div>
             </div>
           </div>

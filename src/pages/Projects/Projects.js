@@ -4,7 +4,7 @@ const Projects = () => {
   return (
     <>
       {/* project is the name of class defined by us and container is predefined bootstrap class */}
-      <div className=" project">
+      <div className=" project" id="project">
         <h2 className=" container col-12 mt-3 mb-1 text-center text-uppercase">
           Top Recent Projects
         </h2>
