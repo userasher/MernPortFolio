@@ -27,3 +27,11 @@
     color: white;
     margin-top: 20px;
 }
+
+/* ==================media queries================ */
+/* for mobile view */
+ @media (max-width: 600px){
+    .sidebar{
+        display: none;
+    }
+ }

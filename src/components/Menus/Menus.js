@@ -7,6 +7,8 @@ import { FcSupport } from "react-icons/fc";
 import { FcBiomass } from "react-icons/fc";
 import { FcContacts } from "react-icons/fc";
 import { Link } from "react-scroll";
+import Pulse from "react-reveal/Pulse";
+import HeadShake from "react-reveal/HeadShake";
 
 import { BsPersonWorkspace } from "react-icons/bs";
 const Menus = ({ toggle }) => {
@@ -15,114 +17,121 @@ const Menus = ({ toggle }) => {
     <>
       {toggle ? (
         <>
-          <div className="navbar-profile-pic">
-            <img
-              src="client\src\components\Menus\ash_new.jpeg"
-              alt="profile-pic"
-            />
-          </div>
+          <Pulse>
+            <div className="navbar-profile-pic">
+              <img
+                src="client\src\components\Menus\ash_new.jpeg"
+                alt="profile-pic"
+              />
+            </div>
+          </Pulse>
+
           {/* nav items me hamare sare menu itmes hai */}
-          <div className="nav-items">
-            <div className="nav-item">
-              <div className="nav-link">
-                {/* home */}
-                <Link
-                  to="home"
-                  spy={true}
-                  smooth={true}
-                  offset={-100}
-                  duration={100}
-                >
-                  <FcHome />
-                </Link>
-                Home
-              </div>
+          <HeadShake>
+            <div className="mobile-nav-menu">
+              <div className="nav-items">
+                <div className="nav-item">
+                  <div className="nav-link">
+                    {/* home */}
+                    <Link
+                      to="home"
+                      spy={true}
+                      smooth={true}
+                      offset={-100}
+                      duration={100}
+                    >
+                      <FcHome />
+                      Home
+                    </Link>
+                  </div>
 
-              {/* about me */}
-              <div className="nav-link">
-                <Link
-                  to="about"
-                  spy={true}
-                  smooth={true}
-                  offset={-100}
-                  duration={100}
-                >
-                  <SiAboutdotme />
-                </Link>
-                About
-              </div>
+                  {/* about me */}
+                  <div className="nav-link">
+                    <Link
+                      to="about"
+                      spy={true}
+                      smooth={true}
+                      offset={-100}
+                      duration={100}
+                    >
+                      <SiAboutdotme />
+                      About
+                    </Link>
+                  </div>
 
-              {/* education detials */}
-              <div className="nav-link">
-                <Link
-                  to="education"
-                  spy={true}
-                  smooth={true}
-                  offset={-100}
-                  duration={100}
-                >
-                  <FcGraduationCap />
-                </Link>
-                Education Details
-              </div>
+                  {/* education detials */}
+                  <div className="nav-link">
+                    <Link
+                      to="education"
+                      spy={true}
+                      smooth={true}
+                      offset={-100}
+                      duration={100}
+                    >
+                      <FcGraduationCap />
+                      Education Details
+                    </Link>
+                  </div>
 
-              {/* techstack */}
-              <div className="nav-link">
-                <Link
-                  to="techstack"
-                  spy={true}
-                  smooth={true}
-                  offset={-100}
-                  duration={100}
-                >
-                  <FcSupport />
-                </Link>
-                Tech Stack
-              </div>
+                  {/* techstack */}
+                  <div className="nav-link">
+                    <Link
+                      to="techstack"
+                      spy={true}
+                      smooth={true}
+                      offset={-100}
+                      duration={100}
+                    >
+                      <FcSupport />
+                      Tech Stack
+                    </Link>
+                  </div>
 
-              {/* project */}
-              <div className="nav-link">
-                <Link
-                  to="project"
-                  spy={true}
-                  smooth={true}
-                  offset={-100}
-                  duration={100}
-                >
-                  <FcBiomass />
-                </Link>
-                Projects
-              </div>
+                  {/* project */}
+                  <div className="nav-link">
+                    <Link
+                      to="project"
+                      spy={true}
+                      smooth={true}
+                      offset={-100}
+                      duration={100}
+                    >
+                      <FcBiomass />
+                      Projects
+                    </Link>
+                  </div>
 
-              {/* Internship */}
-              <div className="nav-link">
-                <Link
-                  to="work"
-                  spy={true}
-                  smooth={true}
-                  offset={-100}
-                  duration={100}
-                >
-                  <BsPersonWorkspace />
-                </Link>
-                Internship
-              </div>
+                  {/* Internship */}
+                  <div className="nav-link">
+                    <Link
+                      to="work"
+                      spy={true}
+                      smooth={true}
+                      offset={-100}
+                      duration={100}
+                    >
+                      <BsPersonWorkspace />
+                      Internship
+                    </Link>
+                  </div>
 
-              {/* contacts */}
-              <div className="nav-link">
-                <Link
-                  to="contact"
-                  spy={true}
-                  smooth={true}
-                  offset={-100}
-                  duration={100}
-                >
-                  <FcContacts />
-                </Link>
-                Contacts
+                  {/* contacts */}
+                  <div className="nav-link">
+                    <Link
+                      to="contact"
+                      spy={true}
+                      smooth={true}
+                      offset={-100}
+                      duration={100}
+                    >
+                      <FcContacts />
+                      Contacts
+                    </Link>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
+          </HeadShake>
         </>
       ) : (
         <>

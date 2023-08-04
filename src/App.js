@@ -9,11 +9,15 @@ import WorkExp from "./pages/workExp/WorkExp";
 import Contact from "./pages/Contact/Contact";
 import ScrollToTop from "react-scroll-to-top";
 import { useTheme } from "./context/ThemeContext";
+import Swing from "react-reveal/Swing";
+import MobileNav from "./components/MobileNav/MobileNav";
+
 function App() {
   const [theme] = useTheme();
   return (
     <>
       <div id={theme}>
+        <MobileNav />
         <Layout />
         <div className="container">
           <About />
@@ -23,9 +27,12 @@ function App() {
           <WorkExp />
           <Contact />
         </div>
-        <div className="footer pb-3 ms-3">
-          <h4 className="text-center">Made with ❣️ By Ashwath &copy; 2023</h4>
-        </div>
+        {/* for footer */}
+        <Swing>
+          <div className="footer pb-3 ms-3">
+            <h4 className="text-center">Made with ❣️ By Ashwath &copy; 2023</h4>
+          </div>
+        </Swing>
       </div>
       {/* fucntionality to scroll to top it is a react package  */}
       <ScrollToTop

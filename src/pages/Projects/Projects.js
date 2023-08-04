@@ -1,5 +1,6 @@
 import React from "react";
 import "./Projects.css";
+import Roll from "react-reveal/Roll";
 const Projects = () => {
   return (
     <>
@@ -23,66 +24,68 @@ const Projects = () => {
           from repetition, injected humour, or non-characteristic words etc.
         </p>
         {/* card design for project */}
-        <div className="row" id="ads">
-          {/* first project card start */}
-          <div className="col-md-5">
-            <div className="card rounded">
-              <div className="card-image">
-                <span className="card-notify-badge">Full Stack</span>
-                <img
-                  // yaha pe real project ka image dalna
-                  src="https://unctad.org/sites/default/files/2021-03/2021-03-15_eCommerceCOVID19report-1-1220x675px.jpg"
-                  alt="project1"
-                />
-              </div>
-              <div className="card-image-overly m-auto mt-3">
-                <span className="span card-detail-badge">MongoDB</span>
-                <span className="span card-detail-badge">Express</span>
-                <span className="span card-detail-badge">React</span>
-                <span className="span card-detail-badge">Node</span>
-              </div>
-              <div className="card-body text-center">
-                <div className="ad-title m-auto">
-                  <h5 className="text-uppercase ">
-                    Railyway Concession Project
-                  </h5>
+        <Roll left>
+          <div className="row" id="ads">
+            {/* first project card start */}
+            <div className="col-md-5">
+              <div className="card rounded">
+                <div className="card-image">
+                  <span className="card-notify-badge">Full Stack</span>
+                  <img
+                    // yaha pe real project ka image dalna
+                    src="https://unctad.org/sites/default/files/2021-03/2021-03-15_eCommerceCOVID19report-1-1220x675px.jpg"
+                    alt="project1"
+                  />
                 </div>
-                {/* href me live project link add karna */}
-                <a className="ad-btn " href="#">
-                  View
-                </a>
+                <div className="card-image-overly m-auto mt-3">
+                  <span className="span card-detail-badge">MongoDB</span>
+                  <span className="span card-detail-badge">Express</span>
+                  <span className="span card-detail-badge">React</span>
+                  <span className="span card-detail-badge">Node</span>
+                </div>
+                <div className="card-body text-center">
+                  <div className="ad-title m-auto">
+                    <h5 className="text-uppercase ">
+                      Railyway Concession Project
+                    </h5>
+                  </div>
+                  {/* href me live project link add karna */}
+                  <a className="ad-btn " href="#">
+                    View
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
 
-          {/* 2nd project card start */}
-          <div className="col-md-5">
-            <div className="card rounded">
-              <div className="card-image">
-                <span className="card-notify-badge">Full Stack</span>
-                <img
-                  // yaha pe project ka image dalna
-                  src="https://unctad.org/sites/default/files/2021-03/2021-03-15_eCommerceCOVID19report-1-1220x675px.jpg"
-                  alt="project1"
-                />
-              </div>
-              <div className="card-image-overly m-auto mt-3">
-                <span className="span card-detail-badge">MongoDB</span>
-                <span className="span card-detail-badge">Express</span>
-                <span className="span card-detail-badge">React</span>
-                <span className="span card-detail-badge">Node</span>
-              </div>
-              <div className="card-body text-center">
-                <div className="ad-title m-auto">
-                  <h5 className="text-uppercase ">Mern Portfolio Website</h5>
+            {/* 2nd project card start */}
+            <div className="col-md-5">
+              <div className="card rounded">
+                <div className="card-image">
+                  <span className="card-notify-badge">Full Stack</span>
+                  <img
+                    // yaha pe project ka image dalna
+                    src="https://unctad.org/sites/default/files/2021-03/2021-03-15_eCommerceCOVID19report-1-1220x675px.jpg"
+                    alt="project1"
+                  />
                 </div>
-                <a className="ad-btn " href="#">
-                  View
-                </a>
+                <div className="card-image-overly m-auto mt-3">
+                  <span className="span card-detail-badge">MongoDB</span>
+                  <span className="span card-detail-badge">Express</span>
+                  <span className="span card-detail-badge">React</span>
+                  <span className="span card-detail-badge">Node</span>
+                </div>
+                <div className="card-body text-center">
+                  <div className="ad-title m-auto">
+                    <h5 className="text-uppercase ">Mern Portfolio Website</h5>
+                  </div>
+                  <a className="ad-btn " href="#">
+                    View
+                  </a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </Roll>
       </div>
     </>
   );

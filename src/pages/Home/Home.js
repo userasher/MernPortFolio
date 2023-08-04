@@ -4,6 +4,7 @@ import "./home.css";
 import Typewriter from "typewriter-effect";
 import Resume from "../../assets/docs/resume.txt";
 import { BsFillMoonStarsFill, BsSunFill } from "react-icons/bs";
+import Flash from "react-reveal/Flash";
 
 // ./ single matlb hu ek folder ke bahar aa jayenge
 const Home = () => {
@@ -35,17 +36,24 @@ const Home = () => {
               }}
             />
           </h1>
-          <div className="home-buttons">
-            <div>
-              <div className="btn btn-hire">Hire Me</div>
+          {/* buttons on home */}
+          <Flash>
+            <div className="home-buttons">
+              <div>
+                <div className="btn btn-hire">Hire Me</div>
+              </div>
+              <div>
+                {/* due to this download fucntionality resume download takes place after resume button is pressed */}
+                <a
+                  className="btn btn-cv"
+                  href={Resume}
+                  download="Your Name.pdf"
+                >
+                  My Resume
+                </a>
+              </div>
             </div>
-            <div>
-              {/* due to this download fucntionality resume download takes place after resume button is pressed */}
-              <a className="btn btn-cv" href={Resume} download="Your Name.pdf">
-                My Resume
-              </a>
-            </div>
-          </div>
+          </Flash>
         </div>
       </div>
     </>
