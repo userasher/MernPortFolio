@@ -68,7 +68,7 @@ const Education = () => {
             <h4 className="vertical-timeline-element-subtitle">
               Veermata jijabai Technological Institute,Mumbai
             </h4>
-            <p>CGPA: 6.4(till 6th sem.)</p>
+            <p>CGPA: 6.7(till 6th sem.)</p>
           </VerticalTimelineElement>
         </VerticalTimeline>
       </div>

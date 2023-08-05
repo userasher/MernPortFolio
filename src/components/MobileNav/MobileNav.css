@@ -21,7 +21,8 @@
 
 .mobile-nav-title{
     margin-left: 20px;
-    color: #f29f67;text-transform: capitalize;
+    color: #f29f67;
+    text-transform: capitalize;
     vertical-align: middle;
     font-size: 20px;
     font-weight: bold;
@@ -32,7 +33,7 @@
 .mobile-nav-menu .nav-items{
     height: auto;
     width: 200px;
-    background-color: #1e1e1e;
+    background-color: burlywood;
     padding-top: 3px;
     padding-bottom: 20px;
     border-radius: 8px;

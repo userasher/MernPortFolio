@@ -22,6 +22,10 @@
     padding-right: 20px;
 }
 
+.project .p1{
+    text-align: justify
+}
+
 /* specifically for card */
 .project .card{
     margin-right:1px!important;
@@ -44,6 +48,7 @@
     padding: 5px 10px;
     font-size: 14px;
 }
+
 
 .project .card img{
     height: 150px;
@@ -114,5 +119,9 @@ font-size: 14px;
     .project hr{
         width: 300px;
     }
+
+    /* #ads{
+        margin-right: auto;
+    } */
 
 } 

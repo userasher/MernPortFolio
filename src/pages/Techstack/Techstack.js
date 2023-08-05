@@ -17,17 +17,14 @@ const Techstack = () => {
 
         <hr />
         <p className="pb-3">
-          There are many variations of passages of Lorem Ipsum available, but
-          the majority have suffered alteration in some form, by injected
-          humour, or randomised words which don't look even slightly believable.
-          If you are going to use a passage of Lorem Ipsum, you need to be sure
-          there isn't anything embarrassing hidden in the middle of text. All
-          the Lorem Ipsum generators on the Internet tend to repeat predefined
-          chunks as necessary, making this the first true generator on the
-          Internet. It uses a dictionary of over 200 Latin words, combined with
-          a handful of model sentence structures, to generate Lorem Ipsum which
-          looks reasonable. The generated Lorem Ipsum is therefore always free
-          from repetition, injected humour, or non-characteristic words etc.
+          My tech stack consists of the front-end (client/user side) and backend
+          (server-side). Frontend technologies include JavaScript, CSS,
+          Tailwind, Bootstrap, HTML, UI libraries, and frameworks like Nextjs,
+          ReactJS while backend technologies include Php, Express, Node. I have
+          experience in creating fully functional validated websites using
+          HTML,javascript and Php. I am comfortable with Mysql and MongoDB
+          database.I have been extensively using react components in all my
+          projects and I believe I have good command over them.
         </p>
 
         {/* technology stack vale boxs */}

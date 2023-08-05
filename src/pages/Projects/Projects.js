@@ -1,27 +1,32 @@
 import React from "react";
 import "./Projects.css";
 import Roll from "react-reveal/Roll";
+import img1 from "../../images/portfolio.jpg";
+import img2 from "../../images/rail.jpeg";
 const Projects = () => {
   return (
     <>
       {/* project is the name of class defined by us and container is predefined bootstrap class */}
-      <div className=" project" id="project">
+      <div className="project" id="project">
         <h2 className=" container col-12 mt-3 mb-1 text-center text-uppercase">
           Top Recent Projects
         </h2>
         <hr />
         <p className="pb-4">
-          There are many variations of passages of Lorem Ipsum available, but
-          the majority have suffered alteration in some form, by injected
-          humour, or randomised words which don't look even slightly believable.
-          If you are going to use a passage of Lorem Ipsum, you need to be sure
-          there isn't anything embarrassing hidden in the middle of text. All
-          the Lorem Ipsum generators on the Internet tend to repeat predefined
-          chunks as necessary, making this the first true generator on the
-          Internet. It uses a dictionary of over 200 Latin words, combined with
-          a handful of model sentence structures, to generate Lorem Ipsum which
-          looks reasonable. The generated Lorem Ipsum is therefore always free
-          from repetition, injected humour, or non-characteristic words etc.
+          <p className="p1">
+            Project 1: PortFolio Website
+            <br />
+            Created a Portfolio website using Nodejs, Reactjs, Javascript, HTML
+            and CSS.I have also used react packages liks Vertical timeline
+            events, React-scroll, React-scroll-to-top, Nodemailer and custom
+            hooks to achieve the light-dark theme in my website.For animation I
+            have react-reveal package and made my website more user attentive.I
+            have made use of ExpressJS to create rest APIs.
+            <br />
+            For sending mails when user fills up the form I have made use of a
+            third party application sendgrid and to connect node server and
+            sendgrid I have used Nodejs.
+          </p>
         </p>
         {/* card design for project */}
         <Roll left>
@@ -33,7 +38,7 @@ const Projects = () => {
                   <span className="card-notify-badge">Full Stack</span>
                   <img
                     // yaha pe real project ka image dalna
-                    src="https://unctad.org/sites/default/files/2021-03/2021-03-15_eCommerceCOVID19report-1-1220x675px.jpg"
+                    src={img2}
                     alt="project1"
                   />
                 </div>
@@ -61,15 +66,15 @@ const Projects = () => {
             <div className="col-md-5">
               <div className="card rounded">
                 <div className="card-image">
-                  <span className="card-notify-badge">Full Stack</span>
+                  <span className="card-notify-badge">Front End</span>
                   <img
                     // yaha pe project ka image dalna
-                    src="https://unctad.org/sites/default/files/2021-03/2021-03-15_eCommerceCOVID19report-1-1220x675px.jpg"
-                    alt="project1"
+                    src={img1}
+                    alt="project2"
                   />
                 </div>
                 <div className="card-image-overly m-auto mt-3">
-                  <span className="span card-detail-badge">MongoDB</span>
+                  {/* <span className="span card-detail-badge">MongoDB</span> */}
                   <span className="span card-detail-badge">Express</span>
                   <span className="span card-detail-badge">React</span>
                   <span className="span card-detail-badge">Node</span>

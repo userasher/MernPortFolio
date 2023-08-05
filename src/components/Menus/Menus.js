@@ -9,6 +9,7 @@ import { FcContacts } from "react-icons/fc";
 import { Link } from "react-scroll";
 import Pulse from "react-reveal/Pulse";
 import HeadShake from "react-reveal/HeadShake";
+import image2 from "../../images/ash.jpg.jpeg";
 
 import { BsPersonWorkspace } from "react-icons/bs";
 const Menus = ({ toggle }) => {
@@ -19,10 +20,7 @@ const Menus = ({ toggle }) => {
         <>
           <Pulse>
             <div className="navbar-profile-pic">
-              <img
-                src="client\src\components\Menus\ash_new.jpeg"
-                alt="profile-pic"
-              />
+              <img src={image2} alt="profile-pic" />
             </div>
           </Pulse>
 
