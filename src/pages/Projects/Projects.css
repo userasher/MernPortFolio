@@ -98,3 +98,21 @@ font-size: 14px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     transition: all 1s ease;
 }
+
+/* mobile view for project */
+@media(max-width:600px){
+    .project{
+        margin: 0;
+        padding: 0;
+        
+    }
+
+    .project p{
+        text-align: justify;
+    }
+
+    .project hr{
+        width: 300px;
+    }
+
+} 

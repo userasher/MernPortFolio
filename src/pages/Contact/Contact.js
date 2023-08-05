@@ -10,7 +10,7 @@ const Contact = () => {
         <div className="card card0 border-0">
           <div className="row">
             <div className="col-md-6 col-lg-6 col-xl-6 col-sm-12">
-              <div className="car1">
+              <div className="card1">
                 <div className="row border-line">
                   <img
                     src="https://img.freepik.com/free-vector/contact-us-concept-landing-page_52683-10032.jpg?w=2000"

@@ -40,7 +40,15 @@ const Home = () => {
           <Flash>
             <div className="home-buttons">
               <div>
-                <div className="btn btn-hire">Hire Me</div>
+                <a
+                  className="btn btn-hire"
+                  // due to this we are redirected to chat on whatsapp
+                  href="https://api.whatsapp.com/send?phone=8010958090"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  Hire Me
+                </a>
               </div>
               <div>
                 {/* due to this download fucntionality resume download takes place after resume button is pressed */}

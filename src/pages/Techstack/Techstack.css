@@ -31,3 +31,25 @@ cursor: pointer;
     border: none;
     transition: 1s;
 }
+
+/* techstack in mobile view */
+@media(max-width: 600px){
+    .techstack{
+        margin: 0;
+        padding: 0;
+        margin-top: 50px;
+    }
+
+    .techstack hr{
+        width: 280px;
+    }
+
+    .techstack p{
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+        text-align: justify;
+    }
+
+    
+}
