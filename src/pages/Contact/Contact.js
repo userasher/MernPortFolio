@@ -1,9 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
 import { BsLinkedin } from "react-icons/bs";
 import { FaGithubSquare } from "react-icons/fa";
+import { toast } from "react-toastify";
+import axios from "axios";
 import "./Contact.css";
 
 const Contact = () => {
+  const [name, setname] = useState("");
+  const [email, setEmail] = useState("");
+  const [msg, setMsg] = useState("");
+
+  // handle submit button
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      if (!name || !email || !msg) {
+        toast.error("Please provide all fields");
+      }
+      const res = await axios.post("/api/v1/portfolio/sendEmail", {
+        name,
+        email,
+        msg,
+      });
+      //validation
+      if (res.data.success) {
+        toast.success(res.data.message);
+        // we have written below three beacuse when user will click on send button all fields will be empty after that
+        setEmail("");
+        setMsg("");
+        setname("");
+      } else {
+        toast.error(res.data.message);
+      }
+    } catch (error) {
+      console.log("something went wrong");
+    }
+  };
+
   return (
     <>
       <div className="contact" id="contact">
@@ -41,6 +74,8 @@ const Contact = () => {
                     name="name"
                     placeholder="Write your name"
                     className="mb-3"
+                    value={name}
+                    onChange={(e) => setname(e.target.value)}
                   />
                 </div>
                 <div className="row px-3">
@@ -49,6 +84,8 @@ const Contact = () => {
                     name="email"
                     placeholder="Enter your email address"
                     className="mb-3"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                   />
                 </div>
                 <div className="row px-3">
@@ -57,10 +94,14 @@ const Contact = () => {
                     name="msg"
                     placeholder="Write your message"
                     className="mb-3"
+                    value={msg}
+                    onChange={(e) => setMsg(e.target.value)}
                   />
                 </div>
                 <div className="row px-3">
-                  <button className="button">SEND MESSAGE</button>
+                  <button className="button" onClick={handleSubmit}>
+                    SEND MESSAGE
+                  </button>
                 </div>
               </div>
             </div>
